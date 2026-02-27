@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Dynasty Paintball — Book Now</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: #080810; color: #e8e8f0; min-height: 100vh; }
+    .demo-banner { background: #e6394615; border-bottom: 1px solid #e6394630; padding: 10px 48px; display: flex; align-items: center; gap: 10px; font-size: 13px; color: #e63946cc; }
+    .demo-badge { background: #e63946; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 1px; border-radius: 4px; padding: 2px 7px; }
+    .demo-banner a { color: #e63946; margin-left: auto; font-size: 12px; text-decoration: none; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; border-bottom: 1px solid #1a1a28; position: sticky; top: 0; z-index: 10; background: #080810cc; backdrop-filter: blur(12px); }
+    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: #fff; display: flex; align-items: center; gap: 10px; }
+    .nav-logo span { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #e63946; border-radius: 8px; font-size: 16px; }
+    nav ul { display: flex; list-style: none; gap: 32px; }
+    nav ul li a { color: #888; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    nav ul li a:hover { color: #e8e8f0; }
+    .nav-cta { background: #e63946 !important; color: #fff !important; padding: 8px 18px; border-radius: 8px; font-weight: 600 !important; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; padding: 80px 48px; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #e63946; background: #e6394618; border: 1px solid #e6394630; border-radius: 20px; padding: 6px 14px; margin-bottom: 24px; }
+    .hero-tag::before { content: "●"; font-size: 8px; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity: 0.4; } }
+    .hero-title { font-family: 'Syne', sans-serif; font-size: 56px; font-weight: 800; line-height: 1.05; color: #fff; margin-bottom: 20px; }
+    .hero-title em { font-style: normal; color: #e63946; }
+    .hero-desc { font-size: 16px; line-height: 1.7; color: #888; margin-bottom: 32px; max-width: 460px; }
+    .hero-stats { display: flex; gap: 32px; }
+    .hero-stat-num { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: #fff; }
+    .hero-stat-label { font-size: 12px; color: #666; margin-top: 2px; }
+    .hero-booking { display: flex; justify-content: center; }
+    .features { max-width: 1200px; margin: 0 auto; padding: 80px 48px; border-top: 1px solid #1a1a28; }
+    .features-title { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 700; text-align: center; color: #fff; margin-bottom: 48px; }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .feature-card { background: #10101a; border: 1px solid #1a1a28; border-radius: 16px; padding: 28px; transition: border-color 0.2s; }
+    .feature-card:hover { border-color: #e63946; }
+    .feature-icon { font-size: 32px; margin-bottom: 16px; }
+    .feature-title { font-weight: 700; font-size: 16px; color: #fff; margin-bottom: 8px; }
+    .feature-desc { font-size: 14px; color: #666; line-height: 1.6; }
+    #mode-indicator { position: fixed; bottom: 20px; right: 20px; font-size: 12px; font-family: monospace; background: #10101a; border: 1px solid #2a2a32; border-radius: 8px; padding: 8px 12px; color: #666; z-index: 999; }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; padding: 40px 24px; } .hero-title { font-size: 40px; } .features-grid { grid-template-columns: 1fr; } nav { padding: 16px 24px; } nav ul { display: none; } .demo-banner { padding: 10px 24px; flex-wrap: wrap; } }
+  </style>
+</head>
+<body>
+  <div class="demo-banner">
+    <span class="demo-badge">DEMO</span>
+    Razorpay × Checkfront integration — booking widget powered by a single script tag.
+    <a href="/health" target="_blank">Server health →</a>
+  </div>
+  <nav>
+    <div class="nav-logo"><span>🎯</span> Red Dynasty</div>
+    <ul>
+      <li><a href="#">Sessions</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Groups</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#book" class="nav-cta">Book Now</a></li>
+    </ul>
+  </nav>
+  <section class="hero" id="book">
+    <div class="hero-content">
+      <div class="hero-tag">Now open for bookings</div>
+      <h1 class="hero-title">Feel the<br/><em>adrenaline</em><br/>rush.</h1>
+      <p class="hero-desc">Singapore's premier paintball experience. Corporate events, birthday parties, team-building — book online in under 2 minutes.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num">12+</div><div class="hero-stat-label">Battle Scenarios</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">5★</div><div class="hero-stat-label">Google Rating</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">10k+</div><div class="hero-stat-label">Happy Players</div></div>
+      </div>
+    </div>
+    <div class="hero-booking">
+      <div id="razorpay-booking" style="width:100%;max-width:480px;"></div>
+    </div>
+  </section>
+  <section class="features">
+    <h2 class="features-title">Why Red Dynasty?</h2>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">⚡</div><div class="feature-title">Instant Confirmation</div><div class="feature-desc">Book and pay online. Confirmed immediately — no calls needed.</div></div>
+      <div class="feature-card"><div class="feature-icon">🎯</div><div class="feature-title">Multiple Scenarios</div><div class="feature-desc">Forest Skirmish to Urban Combat. Sessions for 5 to 100+ players.</div></div>
+      <div class="feature-card"><div class="feature-icon">🏢</div><div class="feature-title">Corporate Packages</div><div class="feature-desc">Team-building events with catering, briefings, and tournament formats.</div></div>
+    </div>
+  </section>
+  <div id="mode-indicator">🟡 MOCK — demo data</div>
+
+  <!-- Widget loads directly — no fetch needed -->
+  <script
+    src="/widget/razorpay-checkfront.js"
+    data-checkfront-host="reddynasty.checkfront.com"
+    data-razorpay-key="rzp_test_sg_zlrl7Mg8p08Cz4"
+    data-proxy-url=""
+    data-currency="SGD"
+    data-theme-color="#e63946"
+    data-merchant-name="Red Dynasty Paintball"
+  ></script>
+
+</body>
+</html>
